@@ -6,7 +6,7 @@ const api = apiAdapter(URL_SERVICE_USER);
 module.exports = async (req, res) => {
   try {
     const user = await api.post("/users/register", req.body);
-    return res.json(media.data);
+    return res.json(user.data);
   } catch (err) {
     if (err.code === "ECONNREFUSED") {
       return res
