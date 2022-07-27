@@ -6,8 +6,8 @@ const api = apiAdapter(URL_SERVICE_COURSE);
 module.exports = async (req, res) => {
   try {
     const id = req.params.id;
-    const mentors = await api.get(`/api/mentors/${id}`);
-    return res.json(mentors.data);
+    const mentor = await api.get(`/api/mentors/${id}`);
+    return res.json(mentor.data);
   } catch (err) {
     if (err.code === "ECONNREFUSED") {
       return res
