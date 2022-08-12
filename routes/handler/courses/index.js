@@ -4,7 +4,7 @@ const destroy = require("./destroy");
 const get = require("./get");
 const getAll = require("./getAll");
 
-modeule.exports = {
+module.exports = {
   create,
   update,
   destroy,
