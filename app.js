@@ -14,7 +14,7 @@ const mediaRouter = require("./routes/media");
 const paymentsRouter = require("./routes/payments");
 const refreshTokensRouter = require("./routes/refreshTokens");
 const mentorsRouter = require("./routes/mentors");
-const imageCoursesRouter = require("./routes/image-courses");
+const imageCoursesRouter = require("./routes/imageCourses");
 
 const verifyToken = require("./middleware/verifyToken");
 
